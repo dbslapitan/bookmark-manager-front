@@ -8,23 +8,20 @@ import Image from "next/image";
 
 export default function Logo(){
 
-  const [logo, setLogo] = useState(logoLight);
   const {resolvedTheme} = useTheme();
   const [isLoaded, setIsLoaded] = useState(false);
 
-  // useEffect(() => {
-  //   if(!isLoaded){
-  //     setIsLoaded(true);
-  //   } else {
-  //     if(resolvedTheme === "dark"){
-  //       setLogo(logoDark);
-  //     }
-  //   }
-  // }, [logo]);
+  useEffect(() => {
+    if(!isLoaded){
+      setIsLoaded(true);
+    }
+  }, [resolvedTheme]);
+
+  console.log(resolvedTheme)
 
   return (
     <>
-      <Image src={resolvedTheme === "light" ? logoLight : logoDark} alt="bookmark manager logo" priority/>
+      <Image src={resolvedTheme === "dark" && isLoaded ? logoLight : logoDark} alt="bookmark manager logo" priority/>
     </>
   );
 }

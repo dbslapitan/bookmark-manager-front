@@ -25,7 +25,8 @@
   --color-red-800: #CB0A04;
 
   --shadow-inputl: 0 0 0 1px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner-border, rgba(10, 13, 18, 0.18)) inset, 0 0 0 2px var(--colors-neutral-light-mode-0, #FFF), 0 0 0 4px var(--colors-teal-700, #014745);
-  --shadow-modall: 0 2px 4px 0 rgba(21, 21, 21, 0.06);
+  --shadow-inputd: 0 0 0 1px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner-border, rgba(10, 13, 18, 0.18)) inset, 0 0 0 2px var(--colors-neutral-dark-mode-800, #001F1F), 0 0 0 4px var(--colors-neutral-dark-mode-100, #B1B9B9);
+  --shadow-modal: 0 2px 4px 0 rgba(21, 21, 21, 0.06);
 }
 
 body {
